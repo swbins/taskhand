@@ -1,5 +1,26 @@
 # Taskhand
 
+A Windows tray app that runs repetitive office tasks on your own PC: scheduled jobs, monitors, backups and recorded UI automation, with optional AI help.
+
+![Taskhand demo: copy a sample automation, change the folder, run a test](images/demo.gif)
+
+**Install:** download `TaskhandSetup-<version>.exe` from [Releases](https://github.com/swbins/taskhand/releases/latest) (Windows 10/11, no admin rights). winget: coming soon (submission pending review).
+
+- **Scheduled jobs and workflows** — run at set times, chain several tasks in order (stops if one fails)
+- **Watchers** — site/server checks, credential expiry warnings, folder tidy, backups, disk space
+- **Show it once** — record a web task and replay it; one-click sample automations
+- **Morning brief and weekly report** — tables without AI, optional AI polish
+- **Hand off by mail** — send a request from your phone, the PC does it and replies
+- **Alerts** — Slack, Teams, Discord, Google Chat, webhooks
+
+Free, no usage limits, no account. No API key — AI is optional (a bundled local model, or a Claude Code / Codex / Gemini CLI subscription you already have). Runs locally; the hub listens on `127.0.0.1` only. The UI is in Korean.
+
+[한국어 설명 ↓](#한국어)
+
+---
+
+## 한국어
+
 **반복 업무는 한 번 보여 주면 끝** — 한 번 해 보이면 그대로 따라 하고, 정한 시각에 알아서 돌리는 Windows 업무 자동화 프로그램.
 무료 AI 가 앱에 들어 있어 AI 요금이 없고, AI 없이도 기본 기능은 그대로 됩니다.
 

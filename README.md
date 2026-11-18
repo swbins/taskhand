@@ -4,7 +4,7 @@ A Windows tray app that runs repetitive office tasks on your own PC: scheduled j
 
 ![Taskhand demo: copy a sample automation, change the folder, run a test](images/demo.gif)
 
-**Install:** download `TaskhandSetup-<version>.exe` from [Releases](https://github.com/swbins/taskhand/releases/latest) (Windows 10/11, no admin rights). winget: coming soon (submission pending review).
+**Get it:** download `TaskhandPortable-<version>.exe` from [Releases](https://github.com/swbins/taskhand/releases/latest) and double-click it — no install, no admin rights (Windows 10/11). It unpacks into a `Taskhand-휴대용` folder next to the exe and starts; double-click again later and it starts right away. To remove it, turn off "start with PC" if you enabled it, quit from the tray, then delete the folder.
 
 - **Scheduled jobs and workflows** — run at set times, chain several tasks in order (stops if one fails)
 - **Watchers** — site/server checks, credential expiry warnings, folder tidy, backups, disk space
@@ -28,12 +28,15 @@ Free, no usage limits, no account. No API key — AI is optional (a bundled loca
 
 ## 받기
 
-👉 **[받기 (Releases)](https://github.com/swbins/taskhand/releases/latest)** — `TaskhandSetup-<버전>.exe` 하나 · **전부 무료, 개수 제한 없음**
+👉 **[받기 (Releases)](https://github.com/swbins/taskhand/releases/latest)** — `TaskhandPortable-<버전>.exe` 하나 · **설치 없이 바로 실행 · 전부 무료, 개수 제한 없음**
 
-- **Windows 10 / 11** · 관리자 권한 없이 설치(내 사용자 폴더 `%LOCALAPPDATA%\WorkKit`)
+- **Windows 10 / 11** · 관리자 권한 없이. 받은 exe 를 더블클릭하면 exe 옆 `Taskhand-휴대용` 폴더에 풀고 바로 띄웁니다(바로가기·「앱 및 기능」 등록 없음)
+- 다음부터는 같은 exe 를 다시 더블클릭하면 바로 뜹니다. 새 판 exe 를 같은 자리에서 실행하면 업데이트(설정·기록은 그대로)
+- PC 켤 때 자동으로 띄우려면 트레이 「⚙ 설정 → PC 켤 때 자동 시작」(기본 꺼짐 — 예약 자동화를 돌리려면 켜기)
+- 끝낼 땐 자동 시작을 켰다면 먼저 끄고, 트레이 「종료」 → 폴더를 지우면 끝
 - 처음 실행할 때 **「Windows의 PC 보호」** 창이 뜰 수 있습니다. 코드 서명을 하지 않은 개인 앱이라 그렇습니다 —
   **「추가 정보」 → 「실행」** 을 누르면 열립니다. 걱정되면 릴리스 노트의 SHA256 값과 비교하거나 [VirusTotal](https://www.virustotal.com/) 에 올려 보세요.
-- 받은 파일 확인(PowerShell): `Get-FileHash .\TaskhandSetup-*.exe`
+- 받은 파일 확인(PowerShell): `Get-FileHash .\TaskhandPortable-*.exe`
 
 ## 할 수 있는 것
 
@@ -65,7 +68,7 @@ Free, no usage limits, no account. No API key — AI is optional (a bundled loca
 ## 내 데이터
 
 설정 · 실행 기록 · 비밀번호는 **이 PC 안**에만 있습니다(비밀번호는 Windows 가 이 사용자에게 묶어 암호화). 계정 가입 · 사용 통계 · 광고가 없고, 만든 사람에게 아무것도 보내지 않습니다.
-허브 화면은 `127.0.0.1` 에서만 열립니다. 지우려면 Windows 설정 → 앱에서 Taskhand 를 제거하세요.
+허브 화면은 `127.0.0.1` 에서만 열립니다. 지우려면 트레이 「종료」 뒤 `Taskhand-휴대용` 폴더를 지우세요(예전 설치판은 Windows 설정 → 앱에서 제거).
 
 - [개인정보 처리 안내](PRIVACY.md)
 - [이용 약관](TERMS.md)

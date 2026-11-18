@@ -2,13 +2,14 @@
 
 A Windows tray app that runs repetitive office tasks on your own PC: scheduled jobs, monitors, backups and recorded UI automation, with optional AI help.
 
-![Taskhand demo: copy a sample automation, change the folder, run a test](images/demo.gif)
+![Taskhand demo: record a web task once, let it run on its own, schedule it for 09:00](images/demo.gif)
 
 **Get it:** download `TaskhandPortable-<version>.exe` from [Releases](https://github.com/swbins/taskhand/releases/latest) and double-click it — no install, no admin rights (Windows 10/11). It unpacks into a `Taskhand-휴대용` folder next to the exe and starts; double-click again later and it starts right away. To remove it, turn off "start with PC" if you enabled it, quit from the tray, then delete the folder.
 
 - **Scheduled jobs and workflows** — run at set times, chain several tasks in order (stops if one fails)
 - **Watchers** — site/server checks, credential expiry warnings, folder tidy, backups, disk space
 - **Show it once** — record a web task and replay it; one-click sample automations
+- **Schedule from the list** — open any automation (recorded ones too) and pick a time and days, e.g. every day at 09:00
 - **Morning brief and weekly report** — tables without AI, optional AI polish
 - **Hand off by mail** — send a request from your phone, the PC does it and replies
 - **Alerts** — Slack, Teams, Discord, Google Chat, webhooks
@@ -41,6 +42,7 @@ Free, no usage limits, no account. No API key — AI is optional (a bundled loca
 ## 할 수 있는 것
 
 - **직접 보여 주기** — 웹에서 한 번 해 보이면 그대로 따라 하는 자동화
+- **목록에서 바로 예약** — 녹화한 일도 줄을 펼쳐 시각·요일만 고르면 정한 시각에 알아서(예: 매일 09:00)
 - **견본 1클릭 복사** — 출근 체크 알림 · 엑셀/CSV 정리 · 웹 페이지 바뀜 알림 · 사이트 로그인 확인
 - **예약 · 일 순서** — 정한 시각에, 여러 일을 순서대로(앞이 실패하면 멈춤)
 - **지켜보기** — 사이트 · 서버 감시, 키 · 로그인 만료 예고, 폴더 정리 · 백업 · 디스크 감시
